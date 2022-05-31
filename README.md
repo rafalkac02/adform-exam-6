@@ -27,7 +27,18 @@ This project is a part of a final exam after 3-months of Scala Academy at [Adfor
 </details>
 
 ### Project description
-The project does XYZ.
+Task description
+```text
+Write a program that reads a file, transforms it and saves the results to another file.
+The file contains in each line key-value pair where key is a number of type Long and value is number of type Double.
+Transformation is called normalization. The transformation must scale all values to fit the [-1; 1] interval. Where max is 1, min -1. The output file must preserve the input file’s key-value order. The file can contain billions of rows and may not fit in memory. For sample values: [1000.0, 2000.0, 100.0, 10000.0] the result is: [-0.818182, -0.616162, -1, 1]
+normalization expression: ((x - min) * 2 / (max - min)) - 1
+⚠️ Important: only pure scala is allowed ⚠️
+- Expected results
+- Publish code to a github repo
+- Don’t forget about README with proper structure
+
+```
 
 ## Getting Started
 The project is built with:
@@ -35,10 +46,9 @@ The project is built with:
 - sbt
 
 ## Usage
-- Clone the repository to the chosen directory with `git clone https://github.com/rafalkac02/adform-exam-1` command.
-- Run the application with `sbt run` command in the same directory
+- Clone the repository to the chosen directory with `git clone https://github.com/rafalkac02/adform-exam-6` command.
+- Run the application with `sbt run <args(0)> <args(1)> <args(2)> ` command in the same directory
 - Test the application with `sbt test` command
-
 
 ## Troubleshooting
 - Make sure that your project does not contain outdated project files using:
